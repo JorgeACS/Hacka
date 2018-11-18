@@ -254,3 +254,13 @@ Empuja sin importarle las diferencias entre los repos
 ```console
 git push --force
 ```
+
+###Borrar historia
+```console
+rm -rf .git
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin <github-uri>
+git push -u --force origin master
+```
